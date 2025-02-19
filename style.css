@@ -90,3 +90,23 @@ body {
     justify-content: space-between;
     color: #999999;
   }
+  .wishes{
+    margin-top: 30px;
+    text-align: center;
+  }
+  #btn_wishes{
+    background-color: #ff5a26;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  #p_wishes{
+    height: 150px;
+    font-size: 28px;
+    line-height: 40px;
+    color: #ff5a26;
+    text-align: justify;
+  }
