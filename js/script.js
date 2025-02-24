@@ -29,3 +29,4 @@ document.getElementById('btn_wishes').addEventListener('click', function() {
    console.log('Номер елементу масиву - ', index);
     document.getElementById('p_wishes').innerText = arrayOfLoveWishes[index];
 });
+

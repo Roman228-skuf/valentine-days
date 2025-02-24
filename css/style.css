@@ -6,6 +6,7 @@ body {
     color: #000000;
     background: #8f4f4f url("../img/textile-valentines-day-hearts-pink.jpg") no-repeat;
     background-size: cover;
+    background-blend-mode: screen;
   }
   
   h1 {
@@ -91,6 +92,24 @@ body {
     justify-content: space-between;
     color: #999999;
   }
+
+  .site-footer p {
+    font-family: "Georgia", serif;
+    font-size: 18px;
+    color: #d3542e;
+    background-color: #ffe2e2;
+    padding: 10px 20px;
+    border-radius: 10px 10px 10px 10px;
+    border: 1px solid #ff5a26;
+    cursor: pointer;
+  }
+
+  .site-footer p:last-child {
+    background-color: #d3542e;
+    color: #ffffff;
+    cursor: default;
+  }
+
   .wishes{
     margin-top: 30px;
     text-align: center;
