@@ -4,7 +4,8 @@ body {
     font-size: 14px;
     line-height: 18px;
     color: #000000;
-    background: #ffffff url("img/textile-valentines-day-hearts-pink.jpg") no-repeat 50% 0;
+    background: #8f4f4f url("../img/textile-valentines-day-hearts-pink.jpg") no-repeat;
+    background-size: cover;
   }
   
   h1 {
@@ -67,17 +68,17 @@ body {
   
   .feature-kitten {
     padding-top: 60px;
-    background-image: url("img/love.png");
+    background-image: url("../img/love.png");
   }
   
   .feature-cat {
     padding-top: 60px;
-    background-image: url("img/star.png");
+    background-image: url("../img/star.png");
   }
   
   .feature-train {
     padding-top: 60px;
-    background-image: url("img/gift.png");
+    background-image: url("../img/gift.png");
   }
   
   .skills-list {
