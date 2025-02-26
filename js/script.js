@@ -23,10 +23,28 @@ const arrayOfLoveWishes = [
     "Ти – моє серце, моя душа і найбільше кохання всього мого життя!"
 ];
 
-document.getElementById('btn_wishes').addEventListener('click', function() {
-   // alert('Button clicked');
-   let index = Math.floor(Math.random() * arrayOfLoveWishes.length)
-   console.log('Номер елементу масиву - ', index);
-    document.getElementById('p_wishes').innerText = arrayOfLoveWishes[index];
-});
+let count_of_hearth = 5
+console.log('countofhearths ' + count_of_hearth)
+document.getElementById('count_of_hearth').innerText = '💖'.repeat(count_of_hearth)
 
+document.getElementById('btn_wishes').addEventListener('click', () => {
+    console.log('button clicked');
+    let index = Math.floor(Math.random() * arrayOfLoveWishes.length)
+    document.getElementById('p_wishes').innerText = arrayOfLoveWishes[index];
+    count_of_hearth--
+    console.log('count_of_hearths' + count_of_hearth)
+    document.getElementById('count_of_hearth').innerText = '💖'.repeat(count_of_hearth) + '🤍'.repeat(5-count_of_hearth)
+    if(count_of_hearth == 0) {
+        document.getElementById('btn_wishes').style.display = 'none'
+
+    }
+})
+
+document.getElementById('btn_buy_hearths').addEventListener('click', () => {
+    
+    count_of_hearth = 5
+    document.getElementById('count_of_hearth').innerText = '💖'.repeat(count_of_hearth)
+    document.getElementById('btn_wishes').style.display = 'inline-block'
+    document.getElementById(p_wishes).innerText = ''
+    console.log('all done')
+})
